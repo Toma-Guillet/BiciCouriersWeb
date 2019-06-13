@@ -4,8 +4,6 @@ import DndList from '../components/dndList/dndList.js';
 
 import '../styles/common.scss';
 
-
-
 class Home extends Component {
 
   render() {

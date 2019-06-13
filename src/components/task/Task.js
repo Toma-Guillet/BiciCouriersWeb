@@ -3,11 +3,15 @@ import styled from 'styled-components';
 import { Draggable } from 'react-beautiful-dnd';
 import { Link } from "react-router-dom";
 
+import './task.scss';
+
 const Container = styled.div`
+    position: relative;
     border: 1px solid lightgrey;
     border-radius: 2px;
-    padding: 8px;
+    height: 200px;
     margin-bottom: 8px;
+    background-color: white;
 `;
 
 class Task extends Component {
@@ -26,7 +30,7 @@ class Task extends Component {
                         pathname: "/order",
                         order: this.props.task,
                     }}>
-                        <button type="button">
+                        <button className="goTo" type="button">
                             Détails
                         </button>
                     </Link>

@@ -28,6 +28,13 @@ class MenuNavigation extends Component {
                 </button>
             </Link>
         </div>
+        <div className="link">
+            <Link to="/">
+                <button type="button">
+                    Ajouter une course
+                </button>
+            </Link>
+        </div>
       </div>
     );
   }

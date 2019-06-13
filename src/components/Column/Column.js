@@ -4,22 +4,18 @@ import { Droppable } from 'react-beautiful-dnd';
 import Task from '../task/Task.js';
 
 const Container = styled.div`
-    margin: 8px;
-    border: 1px solid lightgrey;
-    border-radius: 2px;
-`;
-const Title = styled.h3`
-    padding: 8px;
+    margin: 0px;
+    margin-top: 80px;
+    margin-bottom: 100px;
 `;
 const TaskList = styled.div`
-    padding: 8px;
+    padding: 0px;
 `;
 
 class Column extends Component {
   render() {
     return (
         <Container>
-            <Title>{this.props.column.title}</Title>
             <Droppable droppableId={this.props.column.id}>
                 {provided => (
                     <TaskList ref={provided.innerRef} {...provided.droppableProps}>

@@ -5,8 +5,8 @@ import Column from '../Column/Column.js';
 
 const initialData = {
     tasks: {
-      'task-1': { id: 'task-1', content: 'lol' },
-      'task-2': { id: 'task-2', content: 'lojihl' },
+      'task-1': { id: 'task-1', content: 'Biocop' },
+      'task-2': { id: 'task-2', content: 'Fleuriste' },
     },
     columns: {
       'column-1': {
@@ -20,6 +20,41 @@ const initialData = {
 
 class DndList extends Component {
     state=initialData;
+
+    onDragEnd = result => {
+        const { destination, source, draggableId } = result;
+
+        if(!destination){
+            return;
+        }
+
+        if(
+            destination.droppableId === source.droppableId &&
+            destination.index === source.index
+        ) {
+            return;
+        }
+
+        const column = this.state.columns[source.droppableId];
+        const newTaskIds = Array.from(column.taskIds);
+        newTaskIds.splice(source.index, 1);
+        newTaskIds.splice(destination.index, 0, draggableId);
+
+        const newColumn = {
+            ...column,
+            taskIds: newTaskIds,
+        };
+
+        const newState = {
+            ...this.state,
+            columns: {
+                ...this.state.columns,
+                [newColumn.id]: newColumn,
+            },
+        };
+
+        this.setState(newState);
+    }
 
 
   render() {

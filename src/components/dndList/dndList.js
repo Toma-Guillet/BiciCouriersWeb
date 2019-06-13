@@ -21,15 +21,10 @@ const initialData = {
 class DndList extends Component {
     state=initialData;
 
-    onDragEnd = result => {
-
-    }
 
   render() {
     return (
         <DragDropContext
-            onDragStart
-            onDragUpdate
             onDragEnd={this.onDragEnd}
         >
        {this.state.columnOrder.map(columnId => {

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { Draggable } from 'react-beautiful-dnd';
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
     border: 1px solid lightgrey;
@@ -20,6 +21,15 @@ class Task extends Component {
                     ref={provided.innerRef}
                 >
                     {this.props.task.content}
+                    <Link
+                    to={{
+                        pathname: "/order",
+                        order: this.props.task,
+                    }}>
+                        <button type="button">
+                            Détails
+                        </button>
+                    </Link>
                 </Container>
             )}
         </Draggable>

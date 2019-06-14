@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import MenuNavigation from '../components/menuNavigation/MenuNavigation.js';
-import MenuTools from '../components/MenuTools/menuTools.js';
+import MenuNavigation from '../components/menuNavigation/MenuNavigation';
+import MenuTools from '../components/menuTools/MenuTools';
 import { Redirect } from 'react-router-dom'
 
 class Order extends Component {

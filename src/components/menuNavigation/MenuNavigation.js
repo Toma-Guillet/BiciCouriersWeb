@@ -29,7 +29,7 @@ class MenuNavigation extends Component {
             </Link>
         </div>
         <div className="link">
-            <Link to="/">
+            <Link to="/new">
                 <button type="button">
                     Ajouter une course
                 </button>

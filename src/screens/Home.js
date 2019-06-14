@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import MenuNavigation from '../components/menuNavigation/MenuNavigation.js';
-import MenuTools from '../components/MenuTools/menuTools.js';
-import DndList from '../components/dndList/dndList.js';
+import MenuNavigation from '../components/menuNavigation/MenuNavigation';
+import MenuTools from '../components/menuTools/MenuTools';
+import DndList from '../components/dndList/DndList';
 
 import '../styles/common.scss';
 

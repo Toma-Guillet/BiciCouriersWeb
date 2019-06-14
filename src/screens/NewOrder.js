@@ -2,16 +2,17 @@ import React, { Component } from 'react';
 import MenuNavigation from '../components/menuNavigation/MenuNavigation';
 import MenuTools from '../components/menuTools/MenuTools';
 
-class Map extends Component {
+import '../styles/common.scss';
+
+class NewOrder extends Component {
   render() {
     return (
-      <div className="map">
-        <MenuTools />
-          map
+      <div className="home">
         <MenuNavigation />
+        <MenuTools />
       </div>
     );
   }
 }
 
-export default Map;
+export default NewOrder;

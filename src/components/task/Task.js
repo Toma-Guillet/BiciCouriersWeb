@@ -3,23 +3,16 @@ import styled from 'styled-components';
 import { Draggable } from 'react-beautiful-dnd';
 import { Link } from "react-router-dom";
 
+import imgArrow from '../../img/arrow.png';
 import './task.scss';
-
-const Container = styled.div`
-    position: relative;
-    border: 1px solid lightgrey;
-    border-radius: 2px;
-    height: 200px;
-    margin-bottom: 8px;
-    background-color: white;
-`;
 
 class Task extends Component {
   render() {
     return (
         <Draggable draggableId={this.props.task.id} index={this.props.index}>
             {provided => (
-                <Container
+                <div
+                    className="container"
                     {...provided.draggableProps}
                     {...provided.dragHandleProps}
                     ref={provided.innerRef}
@@ -31,10 +24,10 @@ class Task extends Component {
                         order: this.props.task,
                     }}>
                         <button className="goTo" type="button">
-                            Détails
+                            <img src={imgArrow} alt="Détails" />
                         </button>
                     </Link>
-                </Container>
+                </div>
             )}
         </Draggable>
     );

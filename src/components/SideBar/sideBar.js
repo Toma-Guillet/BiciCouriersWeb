@@ -4,8 +4,7 @@ import { Link } from "react-router-dom";
 
 export default props => {
   return (
-    // Pass on our props
-    <Menu right {...props}>      
+    <Menu right>      
       <Link to="/signin">
         Map
       </Link>

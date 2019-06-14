@@ -6,6 +6,7 @@ class MenuTools extends Component {
   render() {
     return (
         <div className="menuTools">
+          <div className="title">Ajout d'une course</div>
           <SideBar />
         </div>
     );

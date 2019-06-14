@@ -69,5 +69,13 @@ html, body {
   background: rgba(0, 0, 0, 0.3);
 }
 
+.container {
+  max-width: 1024px;
+  margin: auto;
+  padding: 15px;
+  border: 1px solid red;
+  height: 100vh;
+}
+
 .pointer { cursor: pointer; }
 .upper { text-transform: uppercase; }

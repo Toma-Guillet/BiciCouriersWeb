@@ -1,11 +1,25 @@
 import React, { Component } from 'react';
+import Input from '../components/InputField/Input';
 
 class Connexion extends Component {
 
   state = {
-    username: '',
+    login: '',
     password: '',
     error: ''
+  };
+
+  getFieldData = (value, fieldName) => {
+    switch (fieldName) {
+      case 'login':
+        this.setState({login: value.target.value});
+        break;
+      case 'password':
+        this.setState({password: value.target.value});
+        break;
+      default:
+        return;
+    }
   };
 
   dismissError = () => {
@@ -44,7 +58,7 @@ class Connexion extends Component {
 
   render() {
     return (
-      <div className="Login">
+      <div className="connexion container">
         <form onSubmit={this.handleSubmit}>
           {this.state.error &&(
             <h3 data-test="error" onClick={this.dismissError}>
@@ -52,11 +66,25 @@ class Connexion extends Component {
               {this.state.error}
             </h3>
           )}
-          <label>User Name</label>
-          <input type="text" data-test="username" value={this.state.username} onChange={this.handleUserChange}/>
-          <label>Password</label>
-          <input type="password" data-test="password" value={this.state.password} onChange={this.handlePassChange}/>
-          <input type="submit" value="Log In" data-test="submit"/>
+          <Input
+            type="text"
+            placeholder="Identifiant"
+            value={this.state.login}
+            fieldName="login"
+            required={true}
+            getFieldData={this.getFieldData}
+          />
+          <Input
+            type="password"
+            placeholder="Mot de passe"
+            value={this.state.password}
+            fieldName="password"
+            required={true}
+            getFieldData={this.getFieldData}
+          />
+          <Input
+            type="submit"
+          />
         </form>
       </div>
     );

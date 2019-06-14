@@ -1,10 +1,8 @@
-.home{
-    position: relative;
+.home {
+  position: relative;
 }
 
-
-html,
-body {
+html, body {
   margin: 0;
 }
 
@@ -72,3 +70,6 @@ body {
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
 }
+
+.pointer { cursor: pointer; }
+.upper { text-transform: uppercase; }

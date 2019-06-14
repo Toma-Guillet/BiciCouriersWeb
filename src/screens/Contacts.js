@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import MenuNavigation from '../components/menuNavigation/MenuNavigation.js';
+import Navigation from '../components/Navigation/Navigation.js';
 import MenuTools from '../components/MenuTools/menuTools.js';
 
 class Contacts extends Component {
@@ -8,7 +8,7 @@ class Contacts extends Component {
       <div className="contacts">
         <MenuTools />
         contacts
-        <MenuNavigation />
+        <Navigation />
       </div>
     );
   }

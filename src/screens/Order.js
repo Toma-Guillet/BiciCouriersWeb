@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import MenuNavigation from '../components/menuNavigation/MenuNavigation.js';
+import Navigation from '../components/Navigation/Navigation.js';
 import MenuTools from '../components/MenuTools/menuTools.js';
 import { Redirect } from 'react-router-dom'
 
@@ -12,7 +12,7 @@ class Order extends Component {
       <div className="map">
         <MenuTools />
           order {this.props.location.order.content}
-        <MenuNavigation />
+        <Navigation />
       </div>
     );
   }

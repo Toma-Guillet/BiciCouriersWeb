@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import MenuNavigation from '../components/menuNavigation/MenuNavigation.js';
+import Navigation from '../components/Navigation/Navigation.js';
 import MenuTools from '../components/MenuTools/menuTools.js';
 
 class Map extends Component {
@@ -8,7 +8,7 @@ class Map extends Component {
       <div className="map">
         <MenuTools />
           map
-        <MenuNavigation />
+        <Navigation />
       </div>
     );
   }

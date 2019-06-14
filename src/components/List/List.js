@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { DragDropContext } from 'react-beautiful-dnd';
 
-import Column from '../column/Column';
+import Column from '../Column/Column';
 
 const initialData = {
     tasks: {
@@ -22,7 +22,7 @@ const initialData = {
     columnOrder: ['column-1'],
   };
 
-class DndList extends Component {
+class List extends Component {
     state=initialData;
 
     onDragEnd = result => {
@@ -77,4 +77,4 @@ class DndList extends Component {
   }
 }
 
-export default DndList;
+export default List;

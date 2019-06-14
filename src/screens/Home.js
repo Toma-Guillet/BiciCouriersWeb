@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import Navigation from '../components/Navigation/Navigation.js';
-import MenuTools from '../components/MenuTools/menuTools.js';
-import DndList from '../components/List/dndList.js';
+import MenuTools from '../components/MenuTools/MenuTools.js';
+import List from '../components/List/List.js';
 import '../styles/common.scss';
 
 class Home extends Component {
   render() {
     return (
       <main className="home">
-        <DndList />
+        <List />
         <Navigation />
         <MenuTools />
       </main>

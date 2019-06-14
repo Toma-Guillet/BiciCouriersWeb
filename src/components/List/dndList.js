@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { DragDropContext } from 'react-beautiful-dnd';
 
-import Column from '../Column/Column.js';
+import Column from '../column/Column';
 
 const initialData = {
     tasks: {

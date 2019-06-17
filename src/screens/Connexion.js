@@ -26,34 +26,9 @@ class Connexion extends Component {
     this.setState({error: ''});
   };
 
-  handleSubmit = evt => {
-    evt.preventDefault();
-
-    if (!this.state.username) {
-      return this.setState({error: 'Username is required'});
-    }
-
-    if (!this.state.password) {
-      return this.setState({error: 'Password is required'});
-    }
-
-    if (this.state.username && this.state.password) {
-      this.props.history.push("/");
-    }
-
-    return this.setState({error: ''});
-  };
-
-  handleUserChange = evt => {
-    this.setState({
-      username: evt.target.value,
-    });
-  };
-
-  handlePassChange = evt => {
-    this.setState({
-      password: evt.target.value,
-    });
+  handleSubmit = event => {
+    event.preventDefault();
+    console.log('sent');
   };
 
   render() {

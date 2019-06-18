@@ -9,6 +9,7 @@ const Input = props => {
       value={props.value}
       onChange={(value) => props.getFieldData(value, props.fieldName)}
       required={props.required}
+      className={props.style}
     />
   );
 };

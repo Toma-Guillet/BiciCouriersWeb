@@ -1,7 +1,7 @@
 .containerBox{
     position: relative;
 
-    border: 1px solid lightgrey;
+    border: none;
     border-radius: 15px;
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
@@ -11,7 +11,7 @@
     margin-top: 15px;
     margin-bottom: 15px;
 
-    border-left: solid 8px lightgrey;
+    border-left: solid 8px #50ACB6;
 
     overflow: hidden;
     height: 150px;
@@ -27,4 +27,5 @@
     top: 0;
     right: 0;
     border: none;
+    background-color: #ECECEC;
 }

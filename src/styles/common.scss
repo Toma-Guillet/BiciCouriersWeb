@@ -1,6 +1,13 @@
 html, body {
   margin: 0;
+}
+
+*{
   font-family: 'Montserrat';
+}
+
+a:focus{
+  outline: none;
 }
 
 /* Individual item */

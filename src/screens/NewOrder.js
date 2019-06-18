@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Navigation from '../components/MenuNavigation/MenuNavigation';
+import Navigation from '../components/menuNavigation/MenuNavigation';
 import MenuTools from '../components/MenuTools/MenuTools';
 
 import '../styles/common.scss';

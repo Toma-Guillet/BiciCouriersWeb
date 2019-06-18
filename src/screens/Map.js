@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import Navigation from '../components/Navigation/Navigation.js';
-import { compose, withProps } from "recompose"
-import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-maps"
+import Navigation from '../components/menuNavigation/MenuNavigation.js';
+import { compose, withProps } from 'recompose';
+import { withScriptjs, withGoogleMap, GoogleMap, Marker } from 'react-google-maps';
+import googleMaps from '../configs/googleMaps';
 
 const MapComponent = compose(
   withProps({
-    googleMapURL: "https://maps.googleapis.com/maps/api/js?key=AIzaSyASKRHQuc7q4UJsQDwpNTuPrLD_Ysbv4UE&v=3.exp&libraries=geometry,drawing,places",
+    googleMapURL: `https://maps.googleapis.com/maps/api/js?key=${googleMaps.apiKey}&v=3.exp&libraries=geometry,drawing,places`,
     loadingElement: <div style={{ height: `100%` }} />,
     containerElement: <div className="mapComponent" />,
     mapElement: <div style={{ height: `100%` }} />,

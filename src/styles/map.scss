@@ -1,0 +1,46 @@
+.mapScreen {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  header {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: lightgrey;
+
+    button {
+      border: 1px solid black;
+      margin: 10px 0;
+      padding: 0 50px;
+      background-color: transparent;
+      line-height: 1;
+      font-size: 14px;
+
+      &:first-child {
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+      }
+
+      &:last-child {
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+      }
+    }
+
+    .buttonActive {
+      background-color: #000000;
+      color: #ffffff;
+    }
+
+    .buttonInactive {
+      background-color: #ffffff;
+      color: #000000;
+    }
+  }
+
+  .map {
+    width: 100%;
+    flex: 1;
+  }
+}

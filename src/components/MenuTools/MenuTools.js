@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import SideBar from '../SideBar/SideBar';
+import SideBar from '../Sidebar/Sidebar';
 import './menuTools.scss';
 
 class MenuTools extends Component {

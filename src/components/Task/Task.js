@@ -12,7 +12,7 @@ class Task extends Component {
         <Draggable draggableId={this.props.task.id} index={this.props.index}>
             {provided => (
                 <div
-                    className="container"
+                    className="containerBox"
                     {...provided.draggableProps}
                     {...provided.dragHandleProps}
                     ref={provided.innerRef}

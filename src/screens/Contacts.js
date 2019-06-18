@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Navigation from '../c../components/menuNavigation/menuNavigation
+import Navigation from '../components/MenuNavigation/MenuNavigation';
 import MenuTools from '../components/MenuTools/MenuTools.js';
 
 class Contacts extends Component {

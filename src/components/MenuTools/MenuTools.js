@@ -4,10 +4,21 @@ import './menuTools.scss';
 
 class MenuTools extends Component {
   render() {
-    return (
+    if(false){
+      return (
         <div className="menuTools">
           <div className="title">Ajout d'une course</div>
           <SideBar />
+        </div>
+      )
+    }
+    return (
+        <div className="menuTools">
+          <SideBar />
+          <div className="switch">
+            <button className="selected">AUJOURD'HUI</button>
+            <button>DEMAIN</button>
+          </div>
         </div>
     );
   }

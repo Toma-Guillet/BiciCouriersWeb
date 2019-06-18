@@ -14,7 +14,7 @@ class MenuNavigation extends Component {
       <div className="menu">
         <div className="link">
             <Link to="/">
-                <button type="button">
+                <button type="button" className="selected">
                     <img src={imgParcel} alt="Logo" /><br />
                     <span>GESTION DES COURSES</span>
                 </button>

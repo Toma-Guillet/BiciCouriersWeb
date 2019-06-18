@@ -3,21 +3,37 @@ import SideBar from '../Sidebar/Sidebar';
 import './menuTools.scss';
 
 class MenuTools extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      listToday: true,
+      listTomorrow: false
+    };
+
+    this.activeToday = this.activeToday.bind(this);
+    this.activeTomorrow = this.activeTomorrow.bind(this);
+  }
+
+  activeToday() {
+    this.setState(prevState => ({
+      listToday: true,
+      listTomorrow: false
+    }));
+  }
+  activeTomorrow() {
+    this.setState(prevState => ({
+      listToday: false,
+      listTomorrow: true
+    }));
+  }
+
   render() {
-    if(false){
-      return (
-        <div className="menuTools">
-          <div className="title">Ajout d'une course</div>
-          <SideBar />
-        </div>
-      )
-    }
     return (
         <div className="menuTools">
           <SideBar />
           <div className="switch">
-            <button className="selected">AUJOURD'HUI</button>
-            <button>DEMAIN</button>
+            <button onClick={this.activeToday} className={this.state.listToday ? 'selected' : ''}>AUJOURD'HUI</button>
+            <button onClick={this.activeTomorrow} className={this.state.listTomorrow ? 'selected' : ''}>DEMAIN</button>
           </div>
         </div>
     );

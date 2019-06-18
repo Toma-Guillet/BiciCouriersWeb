@@ -6,7 +6,7 @@ html, body {
   font-family: 'Montserrat';
 }
 
-a:focus{
+a:focus, button:focus{
   outline: none;
 }
 

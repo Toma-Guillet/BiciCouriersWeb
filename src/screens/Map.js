@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import MenuNavigation from '../components/menuNavigation/MenuNavigation';
-import MenuTools from '../components/menuTools/MenuTools';
+import Navigation from '../components/Navigation/Navigation.js';
+import MenuTools from '../components/MenuTools/MenuTools.js';
 
 class Map extends Component {
   render() {
@@ -8,7 +8,7 @@ class Map extends Component {
       <div className="map">
         <MenuTools />
           map
-        <MenuNavigation />
+        <Navigation />
       </div>
     );
   }

@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
-import MenuNavigation from '../components/menuNavigation/MenuNavigation';
-import MenuTools from '../components/menuTools/MenuTools';
-import DndList from '../components/dndList/DndList';
-
+import Navigation from '../components/Navigation/Navigation.js';
+import MenuTools from '../components/MenuTools/MenuTools.js';
+import List from '../components/List/List.js';
 import '../styles/common.scss';
 
 class Home extends Component {
   render() {
     return (
-      <div className="home">
-        <DndList />
-        <MenuNavigation />
+      <main className="home">
+        <List />
+        <Navigation />
         <MenuTools />
-      </div>
+      </main>
     );
   }
 }

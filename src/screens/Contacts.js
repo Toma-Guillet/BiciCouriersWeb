@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import MenuNavigation from '../components/menuNavigation/MenuNavigation';
-import MenuTools from '../components/menuTools/MenuTools';
+import Navigation from '../c../components/menuNavigation/menuNavigation
+import MenuTools from '../components/MenuTools/MenuTools.js';
 
 class Contacts extends Component {
   render() {
@@ -8,7 +8,7 @@ class Contacts extends Component {
       <div className="contacts">
         <MenuTools />
         contacts
-        <MenuNavigation />
+        <Navigation />
       </div>
     );
   }

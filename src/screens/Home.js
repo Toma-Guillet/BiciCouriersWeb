@@ -9,7 +9,7 @@ class Home extends Component {
     return (
       <main className="home">
         <List />
-        <Navigation />
+        <Navigation page="home" />
         <MenuTools />
       </main>
     );

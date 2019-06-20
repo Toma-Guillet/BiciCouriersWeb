@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import SideBar from '../Sidebar/Sidebar';
+import { Link } from "react-router-dom";
 import './menuTools.scss';
 
 class MenuTools extends Component {
@@ -33,8 +34,12 @@ class MenuTools extends Component {
         <div className="menuTools">
           <SideBar />
           <div className="switch karla">
-            <button onClick={this.activeToday} className={this.state.listToday ? 'selected' : ''}>COURSIERS</button>
-            <button onClick={this.activeTomorrow} className={this.state.listTomorrow ? 'selected' : ''}>CLIENTS</button>
+            <Link to="/contacts">
+              <button onClick={this.activeToday} className={this.state.listToday ? 'selected' : ''}>COURSIERS</button>
+            </Link>
+            <Link to="/contacts-clients">
+              <button onClick={this.activeTomorrow} className={this.state.listTomorrow ? 'selected' : ''}>CLIENTS</button>
+            </Link>
           </div>
         </div>
       );

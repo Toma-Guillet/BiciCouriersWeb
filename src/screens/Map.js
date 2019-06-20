@@ -72,7 +72,7 @@ class Map extends Component {
           isMarkerShown={this.state.isMarkerShown}
           onMarkerClick={this.onMarkerClick}
         />
-        <Navigation/>
+        <Navigation page='map' />
         <div className="markerInfos" ref="markerInfos" style={{bottom: `-${this.state.markerInfosHeight}px`}}>
           <button className="exitButton pointer" onClick={this.closeMarkerInfos}></button>
           <p className="title upper">En cours de livraison</p>

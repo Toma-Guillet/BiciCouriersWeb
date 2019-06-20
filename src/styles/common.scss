@@ -16,6 +16,9 @@ a:focus, button:focus{
 .karla{
   font-family: 'Karla';
 }
+.marginTop60{
+  margin-top: 60px;
+}
 .marginTop107{
   margin-top: 107px;
 }
@@ -89,11 +92,33 @@ a:focus, button:focus{
 .upper { text-transform: uppercase; }
 
 
-.infosContactClient{
-  position: absolute;
-  background-color: #313131;
-  width: 100%;
-  height: 47px;
-  top: 47px;
-  left: 0;
+.contactsClients{
+  .infosContact{
+    margin-bottom: 12px;
+  }
+  .headerContactClient{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'karla';
+    font-size: 14px;
+  }
+  .infosContactClient{
+    position: absolute;
+    background-color: #313131;
+    width: 100%;
+    height: 47px;
+    top: 47px;
+    left: 0;
+  
+    
+    button{
+      width: 50%;
+      height: 100%;
+      border: none;
+      background: none;
+      color: white;
+      text-decoration: underline;
+    }
+  }
 }

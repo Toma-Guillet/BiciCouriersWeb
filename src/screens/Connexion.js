@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Input from '../components/InputField/Input';
+import logo from '../img/logo.png';
 
 class Connexion extends Component {
 
@@ -34,6 +35,10 @@ class Connexion extends Component {
   render() {
     return (
       <div className="connexion container">
+        <h1>
+          <img src={logo} alt=""/>
+          <span>Gestion des courses</span>
+        </h1>
         <form onSubmit={this.handleSubmit}>
           {this.state.error &&(
             <h3 data-test="error" onClick={this.dismissError}>

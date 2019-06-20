@@ -7,7 +7,8 @@ class Contacts extends Component {
   render() {
     return (
       <div className="contacts">
-        <div className="marginTop60">
+          <div className="infosContactClient"></div>
+        <div className="marginTop107">
           <BlocContact />
           <BlocContact />
         </div>

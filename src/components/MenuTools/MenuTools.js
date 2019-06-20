@@ -28,7 +28,18 @@ class MenuTools extends Component {
   }
 
   render() {
-    return (
+    if(this.props.page === "contact"){
+      return (
+        <div className="menuTools">
+          <SideBar />
+          <div className="switch karla">
+            <button onClick={this.activeToday} className={this.state.listToday ? 'selected' : ''}>COURSIERS</button>
+            <button onClick={this.activeTomorrow} className={this.state.listTomorrow ? 'selected' : ''}>CLIENTS</button>
+          </div>
+        </div>
+      );
+    }else{
+      return (
         <div className="menuTools">
           <SideBar />
           <div className="switch karla">
@@ -36,7 +47,8 @@ class MenuTools extends Component {
             <button onClick={this.activeTomorrow} className={this.state.listTomorrow ? 'selected' : ''}>DEMAIN</button>
           </div>
         </div>
-    );
+      );
+    }
   }
 }
 

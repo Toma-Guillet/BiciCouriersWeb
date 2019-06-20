@@ -41,7 +41,7 @@ class MenuNavigation extends Component {
                 <button type="button">
                     <div className="roundBack"></div>
                     <div className="round">
-                        <div className="content">
+                        <div className="content karla">
                             <img src={imgPlus} alt="Logo" /><br />
                             Ajouter une<br />course
                         </div>

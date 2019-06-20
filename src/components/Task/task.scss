@@ -4,13 +4,14 @@
     border: none;
     border-radius: 1px;
     border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
 
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 15px;
 
     overflow: hidden;
-    height: 150px;
+    height: auto;
     background-color: white;
 
     box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, .2);
@@ -35,7 +36,6 @@
 
         height: 100%;
         width: auto;
-        border-left: solid 8px #50ACB6;
 
         display: flex;
 
@@ -56,6 +56,40 @@
                     }
                 }
             }
+            .cardType{
+                font-weight: bold;
+                font-size: 14px;
+            }
+            .idDelivery{
+                font-weight: bold;
+                font-size: 20px;
+            }
+            .customerName{
+                font-weight: bold;
+                margin-left: 10px;
+                margin-top: 10px;
+            }
+            .cardAddress{
+                margin-left: 10px;
+                margin-bottom: 10px;
+            }
+            .cardStatus{
+                line-height: 29px;
+                flex: auto;
+                margin-left: 10px;
+                color: #DD352E;
+                font-weight: bold;
+                font-size: 12px;
+            }
+            .cardSchedule{
+                border: solid 1px lightgrey;
+                border-radius: 5px;
+                color: grey;
+                text-align: center;
+                line-height: 29px;
+                padding: 0px 5px;
+                font-size: 14px;
+            }
         }
         a{
             width: 16%;
@@ -65,7 +99,7 @@
 
             .goTo{
                 position: relative;
-                height: calc(100% - 20px);
+                height: 100%;
                 top: 0;
                 border: none;
                 background: none;

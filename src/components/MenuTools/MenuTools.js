@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import SideBar from '../SideBar/SideBar';
+import SideBar from '../Sidebar/Sidebar';
 import './menuTools.scss';
 
 class MenuTools extends Component {
@@ -31,7 +31,7 @@ class MenuTools extends Component {
     return (
         <div className="menuTools">
           <SideBar />
-          <div className="switch">
+          <div className="switch karla">
             <button onClick={this.activeToday} className={this.state.listToday ? 'selected' : ''}>AUJOURD'HUI</button>
             <button onClick={this.activeTomorrow} className={this.state.listTomorrow ? 'selected' : ''}>DEMAIN</button>
           </div>

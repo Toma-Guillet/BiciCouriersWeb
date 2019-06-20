@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Navigation from '../components/menuNavigation/MenuNavigation.js';
+import Navigation from '../components/MenuNavigation/MenuNavigation.js';
 import { compose, withProps } from 'recompose';
 import { withScriptjs, withGoogleMap, GoogleMap, Marker } from 'react-google-maps';
 import googleMaps from '../configs/googleMaps';

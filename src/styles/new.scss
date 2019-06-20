@@ -1,0 +1,121 @@
+.new {
+
+  header {
+    margin-top: 48px;
+    padding: 20px 0;
+    background-color: #F1F1F1;
+
+    ul li {
+      display: inline-block;
+      position: relative;
+      width: calc(100% / 3);
+
+      p:first-child {
+        font-size: 11px;
+        font-weight: bold;
+      }
+
+      p:last-child {
+        margin: 5px auto 0 auto;
+        border: 2px solid #FFCD2A;
+        background-color: #000000;
+        color: #ffffff;
+        width: 25px;
+        height: 25px;
+        line-height: 23px;
+        font-size: 14px;
+        z-index: 1;
+        position: relative;
+        font-weight: bold;
+      }
+
+      &:not(:first-child) {
+
+        &::after {
+          content: '';
+          width: 50%;
+          height: 1px;
+          background-color: #dbdbdb;
+          display: block;
+          position: absolute;
+          bottom: 12px;
+          left: 0;
+        }
+      }
+
+      &:not(:last-child) {
+
+        &::before {
+          content: '';
+          width: 50%;
+          height: 1px;
+          background-color: #dbdbdb;
+          display: block;
+          position: absolute;
+          bottom: 12px;
+          right: 0;
+        }
+      }
+    }
+  }
+
+  main {
+    padding: 0 15px;
+
+    form {
+
+      h2 {
+        font-size: 16px;
+        margin: 20px 0;
+      }
+
+      input {
+        height: 40px;
+      }
+
+      .type {
+        display: flex;
+        justify-content: space-between;
+
+        .checkbox {
+          border: 1px solid black;
+          width: 45%;
+          height: 40px;
+          display: flex;
+
+          input {
+            position: absolute;
+            display: none;
+          }
+
+          label {
+            margin: auto;
+            font-size: 14px;
+
+            &::before {
+              content: '';
+              width: 10px;
+              height: 10px;
+              border-radius: 50%;
+              display: inline-block;
+              border: 1px solid black;
+              margin-right: 12px;
+            }
+          }
+
+          * {
+            display: inline-block;
+          }
+        }
+      }
+
+      .identity {
+
+        label {
+          font-size: 12px;
+          display: inline;
+        }
+      }
+    }
+  }
+}

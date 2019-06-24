@@ -11,7 +11,7 @@ class Contacts extends Component {
           <BlocContact />
           <BlocContact />
         </div>
-        <Navigation />
+        <Navigation page="contacts" />
         <MenuTools page="contact" />
       </div>
     );

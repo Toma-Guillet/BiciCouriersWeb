@@ -14,7 +14,7 @@ class MenuNavigation extends Component {
       <div className="menu">
         <div className="link">
             <Link to="/">
-                <button type="button" className="selected">
+                <button type="button" className={this.props.page === 'home' ? 'selected' : ''}>
                     <img src={imgParcel} alt="Logo" /><br />
                     <span>GESTION DES COURSES</span>
                 </button>
@@ -22,7 +22,7 @@ class MenuNavigation extends Component {
         </div>
         <div className="link">
             <Link to="/map">
-                <button type="button">
+                <button type="button" className={this.props.page === 'map' ? 'selected' : ''}>
                     <img src={imgMap} alt="Logo" /><br />
                     <span>CARTE</span>
                 </button>
@@ -30,7 +30,7 @@ class MenuNavigation extends Component {
         </div>
         <div className="link">
             <Link to="/contacts">
-                <button type="button">
+                <button type="button" className={this.props.page === 'contacts' ? 'selected' : ''}>
                     <img src={imgPhone} alt="Logo" /><br />
                     <span>CONTACTS</span>
                 </button>

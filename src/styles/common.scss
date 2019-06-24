@@ -89,7 +89,6 @@ a:focus, button:focus{
 .pointer { cursor: pointer; }
 .upper { text-transform: uppercase; }
 
-
 .infosContactClient{
   position: absolute;
   background-color: #313131;
@@ -98,4 +97,7 @@ a:focus, button:focus{
   top: 47px;
   left: 0;
 }
+
 .center { text-align: center; }
+.visible { display: block; }
+.hidden { display: none; }

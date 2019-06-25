@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/BiciCouriersWeb/static/css/main.cd2ef2cf.chunk.css",
+    "main.js": "/BiciCouriersWeb/static/js/main.2d5735e3.chunk.js",
+    "main.js.map": "/BiciCouriersWeb/static/js/main.2d5735e3.chunk.js.map",
+    "runtime~main.js": "/BiciCouriersWeb/static/js/runtime~main.23d1a68c.js",
+    "runtime~main.js.map": "/BiciCouriersWeb/static/js/runtime~main.23d1a68c.js.map",
+    "static/js/2.b9eb4ebb.chunk.js": "/BiciCouriersWeb/static/js/2.b9eb4ebb.chunk.js",
+    "static/js/2.b9eb4ebb.chunk.js.map": "/BiciCouriersWeb/static/js/2.b9eb4ebb.chunk.js.map",
+    "index.html": "/BiciCouriersWeb/index.html",
+    "precache-manifest.13d213d501e1484f374fc7b9d4779b2f.js": "/BiciCouriersWeb/precache-manifest.13d213d501e1484f374fc7b9d4779b2f.js",
+    "service-worker.js": "/BiciCouriersWeb/service-worker.js",
+    "static/css/main.cd2ef2cf.chunk.css.map": "/BiciCouriersWeb/static/css/main.cd2ef2cf.chunk.css.map",
+    "static/media/index.scss": "/BiciCouriersWeb/static/media/Montserrat-Regular.a8a11736.ttf",
+    "static/media/gaspard.png": "/BiciCouriersWeb/static/media/gaspard.ee8bb6b2.png",
+    "static/media/logo.png": "/BiciCouriersWeb/static/media/logo.6c5883e7.png"
+  }
+}

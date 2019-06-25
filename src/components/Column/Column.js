@@ -5,7 +5,7 @@ import Task from '../Task/Task';
 
 const Container = styled.div`
     margin: 0px;
-    margin-top: 60px;
+    margin-top: 107px;
     margin-bottom: 100px;
 `;
 const TaskList = styled.div`

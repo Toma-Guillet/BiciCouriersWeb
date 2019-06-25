@@ -13,7 +13,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .switch{    
@@ -32,7 +32,7 @@
             border: none;
             background-color: #F2C144;
             color: black;
-            font-size: 12px;
+            font-size: 10px;
 
             &.selected{
                 background-color: #FFCD2A;

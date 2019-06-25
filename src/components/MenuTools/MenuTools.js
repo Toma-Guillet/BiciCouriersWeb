@@ -48,8 +48,8 @@ class MenuTools extends Component {
         <div className="menuTools">
           <SideBar />
           <div className="switch karla">
-            <button onClick={this.activeToday} className={this.state.listToday ? 'selected' : ''}>AUJOURD'HUI</button>
-            <button onClick={this.activeTomorrow} className={this.state.listTomorrow ? 'selected' : ''}>DEMAIN</button>
+            <button onClick={this.activeToday} className={this.state.listToday ? 'selected' : ''}>MES COURSES</button>
+            <button onClick={this.activeTomorrow} className={this.state.listTomorrow ? 'selected' : ''}>TOUTES LES COURSES</button>
           </div>
         </div>
       );

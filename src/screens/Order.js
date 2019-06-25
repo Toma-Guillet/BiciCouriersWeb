@@ -40,10 +40,19 @@ class Order extends Component {
         <div className="drop">
           <div className="labelOrder karla"><img src={imgFlag} alt="Drop" /> DROP</div>
           <div className="contentLine">
-            <div>Agence Géniale</div>
-            <div>10:00 > 12:00</div>
+          <div>
+              <img src={imgPlaceholder} alt="Pick up djadja" />
+              <div className="bold fontSize12">Agence Géniale</div>
+              <div className="fontSize12">Rue des Lilas</div>
+              <div className="fontSize12">44 000 Nantes</div>
+              <div className="karla bold fontSize12">06 80 50 40 40</div>
+              <div className="bold">Voir sur la carte</div>
+            </div>
+            <div><img src={imgWait} alt="Pick up" />10:00 > 12:00</div>
           </div>
-          <div>Commentaire</div>
+          <div>
+          <img src={imgSpeech} alt="Pick up" />Merci de contacter Mr. Martin lorsque vous arrivez sur place. Son numéro est 06 60 05 06 06. Le colis est fragile.            
+          </div>
         </div>
         <Navigation />
       </div>

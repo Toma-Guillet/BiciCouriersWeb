@@ -24,20 +24,16 @@ class Task extends Component {
                         <div className="infos">
                             <div className="line">
                                 <div className="cardType karla upper"><img src={imgPin} alt="Pick up" /> {this.props.task.type}</div>
+                                <div className="cardStatus">{this.props.task.urgent ? 'Urgent' : null}</div>
                                 <div className="idDelivery karla">#{this.props.task.number}</div>
-                                <div className="cardType karla"><img src={imgPin} alt="Pick up" /> PICK UP</div>
-                                <div className="cardStatus">Urgent</div>
-                                <div className="idDelivery karla">#50</div>
                             </div>
                             <div className="customerName karla">{this.props.task.content}</div>
                             <div className="cardAddress">{this.props.task.adresse},<br />44000 Nantes</div>
                             <div className="line">
                                 <div className="iconTypeDelivery"><img src={imgBike} alt="Bike" /></div>
                                 <div className="cardStatus">{this.props.task.urgent ? 'Urgent' : null}</div>
-                                <div className="cardSchedule karla">{this.props.task.time}</div>
-
                                 <div className="cardStatus">Gaspard</div>
-                                <div className="cardSchedule karla">09:00 > 12:00</div>
+                                <div className="cardSchedule karla">{this.props.task.time}</div>
                             </div>
                         </div>
                         <Link

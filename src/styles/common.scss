@@ -160,18 +160,20 @@ a:focus, button:focus{
   }
 }
 
-.contactsClients{
-  .infosContact{
+.contactsClients {
+  .infosContact {
     margin-bottom: 12px;
   }
-  .headerContactClient{
+
+  .headerContactClient {
     text-align: center;
     font-weight: bold;
     margin-bottom: 10px;
     font-family: 'karla';
     font-size: 14px;
   }
-  .infosContactClient{
+
+  .infosContactClient {
     position: absolute;
     background-color: #313131;
     width: 100%;
@@ -180,7 +182,7 @@ a:focus, button:focus{
     left: 0;
 
 
-    button{
+    button {
       width: 50%;
       height: 100%;
       border: none;
@@ -189,13 +191,15 @@ a:focus, button:focus{
       text-decoration: underline;
     }
   }
-.infosContactClient{
-  position: absolute;
-  background-color: #313131;
-  width: 100%;
-  height: 47px;
-  top: 47px;
-  left: 0;
+
+  .infosContactClient {
+    position: absolute;
+    background-color: #313131;
+    width: 100%;
+    height: 47px;
+    top: 47px;
+    left: 0;
+  }
 }
 
 .center { text-align: center; }

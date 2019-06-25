@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import Navigation from '../components/MenuNavigation/MenuNavigation';
 import MenuTools from '../components/MenuTools/MenuTools';
-
 import '../styles/common.scss';
+import validate from '../img/validate.png';
 
 class NewOrder extends Component {
 
   state = {
-    step: 1
+    step: 4
   };
 
   changeStep = (step, event) => {
@@ -20,7 +20,10 @@ class NewOrder extends Component {
         this.setState({step: 3});
         break;
       case 3:
-        this.setState({step: 3});
+        this.setState({step: 4});
+        break;
+      case 4:
+        this.setState({step: 1});
         break;
       default:
         return;
@@ -31,7 +34,7 @@ class NewOrder extends Component {
     return (
       <div className="new">
         <MenuTools />
-        <header>
+        <header className={this.state.step === 4 ? 'hidden' : 'visible'}>
           <ul>
             <li className="activeStep">
               <p className="upper center">Client</p>
@@ -115,40 +118,43 @@ class NewOrder extends Component {
 
           <form className={this.state.step === 3 ? 'visible' : 'hidden'} onSubmit={event => this.changeStep(3, event)}>
             <h1>Pickup</h1>
-
             <h2>Date</h2>
             <input type="date"/>
-
             <h2>Horaires</h2>
             <input type="time"/>
-
             <h2>Récurrence</h2>
             <select className="selection">
               <option value="volvo">Pas de récurrence</option>
               <option value="saab">Récurrence</option>
             </select>
-
             <h2>Commentaire</h2>
             <textarea/>
-
             <h1>Drop</h1>
-
             <h2>Date</h2>
             <input type="date"/>
-
             <h2>Horaires</h2>
             <input type="time"/>
-
             <h2>Récurrence</h2>
             <select className="selection">
               <option value="volvo">Pas de récurrence</option>
               <option value="saab">Récurrence</option>
             </select>
-
             <h2>Commentaire</h2>
             <textarea/>
-
             <input type="submit" value="Valider" className="upper"/>
+          </form>
+
+          <form className={`validation ${this.state.step === 4 ? 'visible' : 'hidden'}`} onSubmit={event => this.changeStep(4, event)}>
+            <img src={validate} alt=""/>
+            <p className="center">La course a bien été ajoutée</p>
+            <p className="center">Coût de la course : 2 tickets</p>
+            <h2>Récurrence</h2>
+            <select className="selection">
+              <option value="florent">Florent</option>
+              <option value="theo">Théo</option>
+              <option vlalue="gaspar">Gaspard</option>
+            </select>
+            <input type="submit" value="RETOUR À LA GESTION DES COURSES" className="upper"/>
           </form>
 
         </main>

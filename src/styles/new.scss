@@ -218,4 +218,39 @@
       }
     }
   }
+
+  .validation {
+    padding: 70px 15px;
+
+    img {
+      margin: auto;
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    p:first-of-type {
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #A3A3A3;
+    }
+
+    h2 {
+      font-size: 16px;
+      margin: 20px 0;
+    }
+
+    select {
+      border: 1px solid #000000;
+      background-color: transparent;
+      border-radius: 0;
+      width: 100%;
+      -webkit-appearance: none;
+      padding: 0 5px;
+      height: 40px;
+    }
+
+    input {
+      font-size: 13px;
+    }
+  }
 }

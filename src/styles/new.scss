@@ -108,6 +108,10 @@
           height: 40px;
           display: flex;
 
+          label:checked {
+            color: red;
+          }
+
           input {
             position: absolute;
             display: none;

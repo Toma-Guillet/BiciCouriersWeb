@@ -7,7 +7,7 @@ import validate from '../img/validate.png';
 class NewOrder extends Component {
 
   state = {
-    step: 4
+    step: 1
   };
 
   changeStep = (step, event) => {

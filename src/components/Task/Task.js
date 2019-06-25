@@ -23,32 +23,27 @@ class Task extends Component {
                     <div className="content">
                         <div className="infos">
                             <div className="line">
-<<<<<<< HEAD
                                 <div className="cardType karla upper"><img src={imgPin} alt="Pick up" /> {this.props.task.type}</div>
                                 <div className="idDelivery karla">#{this.props.task.number}</div>
-=======
                                 <div className="cardType karla"><img src={imgPin} alt="Pick up" /> PICK UP</div>
                                 <div className="cardStatus">Urgent</div>
                                 <div className="idDelivery karla">#50</div>
->>>>>>> e4ef9d6b9b9a99b252b33bd046f4868d04e0a243
                             </div>
                             <div className="customerName karla">{this.props.task.content}</div>
                             <div className="cardAddress">{this.props.task.adresse},<br />44000 Nantes</div>
                             <div className="line">
                                 <div className="iconTypeDelivery"><img src={imgBike} alt="Bike" /></div>
-<<<<<<< HEAD
                                 <div className="cardStatus">{this.props.task.urgent ? 'Urgent' : null}</div>
                                 <div className="cardSchedule karla">{this.props.task.time}</div>
-=======
+
                                 <div className="cardStatus">Gaspard</div>
                                 <div className="cardSchedule karla">09:00 > 12:00</div>
->>>>>>> e4ef9d6b9b9a99b252b33bd046f4868d04e0a243
                             </div>
                         </div>
                         <Link
                             to={{
                                 pathname: "/order",
-                                order: this.props.task,
+                                order: this.props.tasks,
                             }}>
                             <button className="goTo" type="button">
                                 <img src={imgArrow} alt="Détails" />
